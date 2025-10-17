@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Monsters</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Rock Paper Monsters</h1>
+      <!-- <img width="600" height="auto" src="logo.png" alt="Rock Paper Monsters" /> -->
+
+      <p>
+        Background story: Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Curabitur quis velit fermentum, fringilla mauris sed, aliquet
+        nisi. Nam rhoncus, nisl sit amet mattis tincidunt, ligula lectus ornare
+        quam, sed porttitor neque purus id sapien. Praesent lacus sapien, tempus
+        eu nibh sit amet, consectetur lobortis mi. Vestibulum eu maximus orci,
+        in pharetra est. Etiam vulputate iaculis ultrices. Integer imperdiet
+        mollis felis vitae scelerisque. Integer aliquet nibh eget magna
+        facilisis euismod.
+      </p>
+    </header>
+
+    <main>
+      <div>
+        <h2>Something is coming...</h2>
+        <img
+          width="400px"
+          src="monster-coming.png"
+          alt="red eyes in the dark"
+        />
+      </div>
+
+      <h2>Choose your weapon...</h2>
+      <button
+        onclick="
+playGame('Sunlight');
+  "
+      >
+        Sunlight
+      </button>
+      <button
+        onclick="
+ playGame('Silver Bullet');"
+      >
+        Silver Bullet
+      </button>
+
+      <button
+        onclick="
+playGame('Axe');
+  "
+      >
+        Axe
+      </button>
+
+      <p class="js_result"></p>
+      <p class="js_moves"></p>
+      <p class="js_score"></p>
+
+      <button
+        onclick="
+score.wins = 0;
+score.losses = 0;
+score.ties = 0;
+localStorage.removeItem('score');
+updateScoreElement()
+    "
+      >
+        Reset Score
+      </button>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

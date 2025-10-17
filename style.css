@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+  margin: 2em auto 2em auto;
+  text-align: center;
+  width: 60%;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(255, 87, 87);
+}
+
+p {
+  font-size: 1.2em;
+  margin: 2em auto 2em auto;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+button {
+  font-size: 1.4em;
+}
